@@ -45,7 +45,6 @@ function StopPageResults(props) {
     });
 
     return displayArray;
-
   }
 
   return (
