@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="tests.smoke"
+    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
+    tests="4" time="4.569" timestamp="">
+  
+    <testcase name="The user is presented a list of routes" classname="tests.smoke" time="0.4650" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="The user is presented a list of direction options" classname="tests.smoke" time="1.150" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="The user is presented a list of stops" classname="tests.smoke" time="1.174" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="The user is presented with a list of the details for a specific stop" classname="tests.smoke" time="1.780" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

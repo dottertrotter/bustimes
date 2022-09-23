@@ -39,6 +39,7 @@ function StopSelector(props) {
       options={stops}
       onChange={handleChange}
       className="top-margin"
+      id="stops-selector"
     />
   )
 }

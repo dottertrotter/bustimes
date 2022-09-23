@@ -39,6 +39,7 @@ function RouteSelector(props) {
       options={routes}
       onChange={handleChange}
       className="top-margin"
+      id="routes-selector"
     />
   )
 }

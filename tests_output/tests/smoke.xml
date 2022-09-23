@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="tests.smoke"
+    errors="1" failures="0" hostname="" id="" package="smoke" skipped="1"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+    <system-err>
+       An error occurred while creating a new GeckoDriver session: [Error] Timed out waiting for the WebDriver server at http://localhost:64232/
+  Verify if GeckoDriver is configured correctly; using:
+  {
+     start_process: true,
+     server_path: &#39;/Users/bradmarsh/Development/bus-app/node_modules/geckodriver/geckodriver&#39;,
+     port: undefined,
+     host: &#39;localhost&#39;,
+     ssl: false,
+     default_path_prefix: &#39;&#39;,
+     proxy: undefined,
+     cli_args: []
+  }
+
+ 
+  More info might be available in the log file: /Users/bradmarsh/Development/bus-app/logs/tests/smoke_geckodriver.log
+    </system-err>
+  
+
+    
+    <error message="An error occurred while creating a new GeckoDriver session: [Error] Timed out waiting for the WebDriver server at http://localhost:64232/"><![CDATA[
+      Error: An error occurred while creating a new GeckoDriver session: [Error] Timed out waiting for the WebDriver server at http://localhost:64232/
+    at onError (/Users/bradmarsh/Development/bus-app/node_modules/selenium-webdriver/http/util.js:88:16)
+    at runMicrotasks (&lt;anonymous&gt;)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+      ]]></error>  
+
+  
+    
+    <testcase
+      name="The user is presented a list of routes" classname="tests.smoke">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
