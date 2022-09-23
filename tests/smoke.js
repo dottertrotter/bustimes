@@ -31,3 +31,17 @@ describe('Stops Page', function() {
       .end();
   });
 });
+
+describe('Stop Results Page', function() {
+  it('The user is presented with a list of the details for a specific stop', function(browser) {
+    browser
+      .url('http://localhost:3000/991/direction/0/stop/AM34')
+      .waitForElementVisible('body')
+      .assert.elementPresent("#routes-selector")
+      .assert.elementPresent("#directions-selector")
+      .assert.elementPresent("#stops-selector")
+      .assert.textMatches("#stop-name", "^34TH AVE S & AMERICAN BLVD / I-494")
+      .assert.textContains("#stop-reference", "41975")
+      .end();
+  });
+});

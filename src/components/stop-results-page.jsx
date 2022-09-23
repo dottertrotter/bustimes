@@ -54,10 +54,10 @@ function StopPageResults(props) {
       <StopSelector routeId={routeId} directionId={directionId} stopId={stopId} />
 
       <div className="row table-headings data-table top-margin">
-        <div className="nine columns padded">
+        <div className="nine columns padded" id="stop-name">
           {stopName}
         </div>
-        <div className="three columns align-right padded">
+        <div className="three columns align-right padded" id="stop-reference">
           Stop #: {stopRefNumber}
         </div>
       </div>
