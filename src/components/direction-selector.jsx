@@ -38,6 +38,7 @@ function DirectionSelector(props) {
       value={seletedDirection}
       options={directions}
       onChange={handleChange}
+      className="top-margin"
     />
   )
 }

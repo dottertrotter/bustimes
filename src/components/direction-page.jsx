@@ -9,7 +9,7 @@ function DirectionPage() {
   const routeId = params.routeId;
 
   return (
-    <div>
+    <div className="container">
       <RouteSelector routeId={routeId} />
       <DirectionSelector routeId={routeId} />
     </div>

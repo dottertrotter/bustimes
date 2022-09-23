@@ -13,7 +13,9 @@ import RouteSelector from './components/route-selector';
 
 function App() {
   return (
-    <RouteSelector></RouteSelector>
+    <div className="container">
+      <RouteSelector></RouteSelector>
+    </div>
   )
 }
 

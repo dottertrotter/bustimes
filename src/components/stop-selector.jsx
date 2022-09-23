@@ -8,8 +8,6 @@ function StopSelector(props) {
   const [stops, setStops] = useState([]);
   const [seletedStop, setSelectedStop] = useState(null);
 
-  console.log(props)
-
   useEffect(() => {
     fetch(`https://svc.metrotransit.org/nextripv2/stops/${props.routeId}/${props.directionId}`)
       .then((response) => response.json())
@@ -31,8 +29,6 @@ function StopSelector(props) {
   }, [props.stopId, stops]);
 
   function handleChange(selectedOption){
-    console.log(selectedOption)
-
     setSelectedStop(selectedOption);
     navigate(`/${props.routeId}/direction/${props.directionId}/stop/${selectedOption.value}`)
   }
@@ -42,6 +38,7 @@ function StopSelector(props) {
       value={seletedStop}
       options={stops}
       onChange={handleChange}
+      className="top-margin"
     />
   )
 }

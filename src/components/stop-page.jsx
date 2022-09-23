@@ -12,7 +12,7 @@ function StopPage() {
   const stopId = params.stopId;
 
   return (
-    <div>
+    <div className="container">
       <RouteSelector routeId={routeId} />
       <DirectionSelector routeId={routeId} directionId={directionId} />
       <StopSelector routeId={routeId} directionId={directionId} stopId={stopId} />
