@@ -47,10 +47,6 @@ describe('Stop Results Page', function() {
 });
 
 describe('Navigation', function() {
-  //http://localhost:3000/991/direction/1/stop/MAAM
-
-  //http://localhost:3000/991/direction/0/stop/HHTE
-
   it('The user should be able to navigate with the back and forward browser buttons', function(browser) {
     browser
       .url('http://localhost:3000/991/direction/0/stop/HHTE')

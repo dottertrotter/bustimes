@@ -1,4 +1,6 @@
-To setup clone the repo and install packages
+To setup:
+- clone the repo 
+- install packages
 
 ### `npm install`
 
