@@ -45,3 +45,23 @@ describe('Stop Results Page', function() {
       .end();
   });
 });
+
+describe('Navigation', function() {
+  it('The user should be able to navigate with the back and forward browser buttons', function(browser) {
+    browser
+      .url('http://localhost:3000/991/direction/0/stop/HHTE')
+      .waitForElementVisible('body')
+      .assert.textContains("#stop-reference", "57188")
+      .url('http://localhost:3000/991/direction/1/stop/MAAM')
+      .waitForElementVisible('body')
+      .assert.textContains("#stop-reference", "56881")
+      .back()
+      .waitForElementVisible('body')
+      .assert.textContains("#stop-reference", "57188")
+      .forward()
+      .waitForElementVisible('body')
+      .assert.textContains("#stop-reference", "56881")
+      .end();
+  });
+});
+
